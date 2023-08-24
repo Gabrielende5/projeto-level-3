@@ -1,6 +1,8 @@
 import React from 'react'
 import trash from '../../svgs/trash.svg'
 import edit from '../../svgs/edit.png'
+import {FaTrash} from 'react-icons/fa'
+import {BiSolidAddToQueue} from 'react-icons/bi'
 import "./Note.css"
 
 function Note({n}) {
@@ -15,8 +17,8 @@ function Note({n}) {
                 {n.date}
             </div>
             <div className='div-svgs'>
-                <div><img className="svgs" src={trash}/></div>
-                <div><img className="svgs-edit" src={edit}/></div>
+                <div><FaTrash color='red'/></div>
+                <div><BiSolidAddToQueue color='green'/></div>
             </div>
         </div>
        
