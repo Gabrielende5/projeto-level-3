@@ -17,8 +17,8 @@ function Note({n}) {
                 {n.date}
             </div>
             <div className='div-svgs'>
-                <div><FaTrash color='red'/></div>
-                <div><BiSolidAddToQueue color='green'/></div>
+                <div><FaTrash  color='red' size={30} /></div>
+                <div><BiSolidAddToQueue color='green' size={30}/></div>
             </div>
         </div>
        
