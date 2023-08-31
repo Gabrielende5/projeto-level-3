@@ -5,7 +5,7 @@ import {FaTrash} from 'react-icons/fa'
 import {BiSolidAddToQueue} from 'react-icons/bi'
 import "./Note.css"
 
-function Note({n}) {
+function Note({n,abrirOModal}) {
   return (
     <div className='note'>
         <div>
@@ -18,7 +18,7 @@ function Note({n}) {
             </div>
             <div className='div-svgs'>
                 <div><FaTrash  color='red' size={30} /></div>
-                <div><BiSolidAddToQueue color='green' size={30}/></div>
+                <div onClick={()=>abrirOModal()}><BiSolidAddToQueue color='green' size={30}/></div>
             </div>
         </div>
        
